@@ -18,7 +18,7 @@
 int _printf(const char *format, ...)
 {
 	int x, y, count = 0;
-	va_list lst;
+	va_list fst;
 	interface ids[] = {
 		{'c', _print_char},
 		{'s', _print_string},
@@ -36,12 +36,12 @@ int _printf(const char *format, ...)
 			for (; format[x] != '\0'; x++)
 			{
 				for (y = 0; ids[y].id != '\0'; y++)
-					if (format[x] == ids[j].id)
+					if (format[x] == ids[y].id)
 					{
-						count += ids[j].func(fst);
+						count += ids[y].func(fst);
 						break;
 					}
-				if (ids[j].id)
+				if (ids[y].id)
 					break;
 			}
 			if (format[x] == '\0')
