@@ -1,4 +1,4 @@
-0x11. C - printf
+**0x11. C - printf**
 
 Concepts
 For this project, we expect you to look at these concepts:
@@ -20,6 +20,7 @@ Flowcharts concept page
 man or help:
 
 printf (3)
+
 Requirements
 General
 Allowed editors: vi, vim, emacs
